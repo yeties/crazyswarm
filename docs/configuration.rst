@@ -78,6 +78,17 @@ First, select your tracking system in the appropriate tab below.
 
       If using ``libobjecttracker`` as ``object_tracking_type`` disable all objects.
 
+   .. tab:: Nokov
+
+      Nokov is fully supported and tested with XING 1.0.0.2456.
+      Set the host name of the Nokov machine:
+
+      .. code-block:: yaml
+
+          # ros_ws/src/crazyswarm/launch/hover_swarm.launch
+          motion_capture_type: "nokov"
+          motion_capture_host_name: "10.1.1.198" # hostname or IP address
+          
    .. tab:: OptiTrack
 
       OptiTrack is fully supported and tested with Motive 2.3 and Motive 3.0.
@@ -138,17 +149,6 @@ First, select your tracking system in the appropriate tab below.
 
       (This only works for debugging when connected to a few drones.)
 
-
-   .. tab:: Nokov
-
-      Nokov is fully supported and tested with XING 1.0.0.2456.
-      Set the host name of the Nokov machine:
-
-      .. code-block:: yaml
-
-          # ros_ws/src/crazyswarm/launch/hover_swarm.launch
-          motion_capture_type: "nokov"
-          motion_capture_host_name: "10.1.1.198" # hostname or IP address
 
 Select object tracking mode (motion capture only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
